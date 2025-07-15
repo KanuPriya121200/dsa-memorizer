@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DSA Memorizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h2>💻 DSA Memorizer</h2>
+    
+    <input id="searchInput" type="text" placeholder="Search problems..." />
+    <input id="titleInput" type="text" placeholder="Problem title (e.g., Two Sum)" />
+    <input id="linkInput" type="text" placeholder="Problem link (LeetCode, GFG, etc.)" />
+    <input id="tagsInput" type="text" placeholder="Tags (e.g., DP, Graph)" />
+    <select id="difficultyInput">
+      <option value="">Difficulty</option>
+      <option value="Easy">Easy</option>
+      <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+    </select>
+    <button class="add-button" onclick="addProblem()">Add Problem</button>
+
+    <p id="progress"></p>
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <h3>To Do</h3>
+    <ul id="todoList"></ul>
+
+    <h3>Done</h3>
+    <ul id="doneList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
